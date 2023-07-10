@@ -1,18 +1,17 @@
 function highlight() {
     //Write your code here
-let change = document.getElementByTagName("strong") ;
-	for(let i=0; i < change.length; i++){
-		change[i].style.color = "green" ;
-	}
-
+var change = document.querySelectorAll("strong") ;
+	change.forEach(function(word){
+		word.style.color = 'green' ;
+	});
 }
 
 
 function return_normal() {
     //Write your code here
-    let change = document.getElementByTagName("strong") ;
-	for(let i=0; i < change.length; i++){
-		change[i].style.color = "black" ;
-	}
+  var change = document.querySelectorAll("strong") ;
+	change.forEach(function(word){
+		word.style.color = 'green' ;
+	});
 
 }
